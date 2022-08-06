@@ -43,6 +43,7 @@ function uploadTransaction() {
                     const transaction = db.transaction(['new_transaction'], 'readwrite');
                     const budgetObjectStore = transaction.objectStore('new_transaction');
                     budgetObjectStore.clear();
+                    alert("your new budget items have been uploaded!");
                 })
 
 
